@@ -11,7 +11,7 @@ const App = () => {
     setLoading(true);
     const unsubscribe = NetInfo.addEventListener(state => {
       setTimeout(() => {
-        setIsConnected(state.isConnected);
+        setIsConnected(state?.isConnected);
         setLoading(false);
       }, 100);
     });
@@ -20,6 +20,7 @@ const App = () => {
       unsubscribe();
     };
   }, []);
+
   const Loader = () => {
     return (
       <View
@@ -29,7 +30,7 @@ const App = () => {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <ActivityIndicator size="large" color="#0000ff" />
+        <ActivityIndicator size="large" color="red" />
       </View>
     );
   };
@@ -40,7 +41,7 @@ const App = () => {
       ) : isConnected === true ? (
         <WebView
           originWhitelist={['*']}
-          source={{uri: 'https://www.pizzeriaenjoy.com/'}}
+          source={{uri: 'https://Goodpappa.com'}}
           ignoreSslError={true}
           cacheEnabled={false}
         />

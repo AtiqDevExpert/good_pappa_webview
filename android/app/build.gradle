@@ -90,10 +90,10 @@ android {
             keyPassword 'android'
         }
         release {
-      storeFile file('pizzeria.keystore')
-      storePassword 'pizzeria'
-      keyAlias 'pizzeria'
-      keyPassword 'pizzeria'
+      storeFile file('goodpappa.keystore')
+      storePassword '12345678'
+      keyAlias '-alias assemble'
+      keyPassword '12345678'
     }
     }
     buildTypes {
