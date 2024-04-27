@@ -13,7 +13,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "good_pappa";
+    return "goodpappa";
   }
 
   /**
