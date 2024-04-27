@@ -1,4 +1,4 @@
-package com.pizzeriaenjoy;
+package com.goodpappa;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

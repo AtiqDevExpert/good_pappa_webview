@@ -1,4 +1,4 @@
-package com.pizzeriaenjoy;
+package com.goodpappa;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

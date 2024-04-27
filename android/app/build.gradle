@@ -73,13 +73,13 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.pizzeriaenjoy"
+    namespace "com.goodpappa"
     defaultConfig {
-        applicationId "com.pizzeriaenjoy"
+        applicationId "com.goodpappa"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 2
-        versionName "1.1"
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
     }
     signingConfigs {
