@@ -1,5 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, SafeAreaView, ActivityIndicator} from 'react-native';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  ActivityIndicator,
+  ImageBackground,
+} from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
 import {WebView} from 'react-native-webview';
 
@@ -13,7 +19,7 @@ const App = () => {
       setTimeout(() => {
         setIsConnected(state?.isConnected);
         setLoading(false);
-      }, 100);
+      }, 1000);
     });
 
     return () => {
@@ -21,23 +27,21 @@ const App = () => {
     };
   }, []);
 
-  const Loader = () => {
+  const Splash = () => {
     return (
-      <View
-        style={{
-          backgroundColor: 'white',
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}>
-        <ActivityIndicator size="large" color="red" />
+      <View style={{flex: 1, backgroundColor: 'white'}}>
+        <ImageBackground
+          resizeMode="contain"
+          source={require('./splash.png')}
+          style={{flex: 1, justifyContent: 'center'}}></ImageBackground>
       </View>
     );
   };
+
   return (
     <SafeAreaView style={{flex: 1}}>
       {loading === true && isConnected === false ? (
-        <Loader />
+        <Splash />
       ) : isConnected === true ? (
         <WebView
           originWhitelist={['*']}
