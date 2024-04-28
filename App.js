@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   ActivityIndicator,
   ImageBackground,
+  Platform,
 } from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
 import {WebView} from 'react-native-webview';
@@ -39,7 +40,7 @@ const App = () => {
   };
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <View style={{flex: 1, top: Platform.OS === 'ios' ? 60 : 0}}>
       {loading === true && isConnected === false ? (
         <Splash />
       ) : isConnected === true ? (
@@ -60,7 +61,7 @@ const App = () => {
           <Text>No Internet Available</Text>
         </View>
       )}
-    </SafeAreaView>
+    </View>
   );
 };
 
