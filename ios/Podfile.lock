@@ -377,7 +377,7 @@ PODS:
     - glog
   - react-native-netinfo (9.5.0):
     - React-Core
-  - react-native-webview (13.8.6):
+  - react-native-webview (13.10.5):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - React-NativeModulesApple (0.72.6):
@@ -699,7 +699,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 194e32c6aab382d88713ad3dd0025c5f5c4ee072
   React-logger: cebf22b6cf43434e471dc561e5911b40ac01d289
   react-native-netinfo: 48c5f79a84fbc3ba1d28a8b0d04adeda72885fa8
-  react-native-webview: a987704e6cd3f5a21d372ef316e43f7b442d59ca
+  react-native-webview: f817a7bfd394634877638019ceac547996561372
   React-NativeModulesApple: 02e35e9a51e10c6422f04f5e4076a7c02243fff2
   React-perflogger: e3596db7e753f51766bceadc061936ef1472edc3
   React-RCTActionSheet: 17ab132c748b4471012abbcdcf5befe860660485
@@ -723,4 +723,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 6650d0fbfdd7010b13365685c6d946caf0955f13
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2
